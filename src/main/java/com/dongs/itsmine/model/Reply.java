@@ -44,5 +44,11 @@ public class Reply {
 	@CreationTimestamp
 	private Timestamp createDate;
 	
+	public void update(User user, Board board, String content) {
+		setUser(user);
+		setBoard(board);
+		setContent(content);
+	}//dto하면서 reply에 데이터 빌드해주는 메서드임
+	
 	
 }

@@ -6,10 +6,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-public class ResponseDto<T>{
-	int status;
-	T data;
+public class ReplySaveRequestDto {
+	private int userId;
+	private int boardId;
+	private String content;
 }
